@@ -53,12 +53,13 @@ GET | /incidents | Get all incidents | curl http://127.0.0.1:5000/incidents
 POST | /incidents | Create new incident | curl -X POST http://127.0.0.1:5000/incidents -H "Content-Type: application/json" -d "{\"title\": \"Test\", \"description\": \"Test description\", \"severity\": \"High\"}"
 PUT | /incidents/<id> | Update an incident | curl -X PUT http://127.0.0.1:5000/incidents/1 -H "Content-Type: application/json" -d "{\"title\": \"Updated Title\"}"
 DELETE | /incidents/<id> | Delete an incident | curl -X DELETE http://127.0.0.1:5000/incidents/1
+```
 
-**✍️ Design Decisions / Challenges**
-Simple Design: Flask with SQLite for quick setup, avoiding complex configuration.
+### ✍️ Design Decisions / Challenges
+- **Simple Design** : Flask with SQLite for quick setup, avoiding complex configuration.
 
-Modular Code: Separate models.py for database models.
+- **Modular Code**: Separate models.py for database models.
 
-Error Handling: Basic error handling for wrong requests.
+- **Error Handling**: Basic error handling for wrong requests.
 
-Challenge: Managing database sessions outside app context was tricky initially.
+- **Challenge**: Managing database sessions outside app context was tricky initially.
