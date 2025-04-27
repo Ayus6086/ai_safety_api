@@ -24,7 +24,7 @@ This project is a **Flask-based REST API** for managing AI safety-related incide
    ```bash
    python db_setup.py
 
-5. Run the Application:
+6. Run the Application:
    ```bash
    python app.py
 
@@ -45,7 +45,8 @@ The database file (incidents.db) is automatically created when you run:
    ```bash
    python db_setup.py
 
-📡 API Endpoints (with Examples)
+
+***📡 API Endpoints (with Examples)***
 Method | Endpoint | Description | Example
 GET | / | Home page | Open browser or curl http://127.0.0.1:5000/
 GET | /incidents | Get all incidents | curl http://127.0.0.1:5000/incidents
