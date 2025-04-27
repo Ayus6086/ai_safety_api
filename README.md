@@ -12,9 +12,8 @@ This project is a **Flask-based REST API** for managing AI safety-related incide
    cd ai_safety_api
 
 2. **Set up a Virtual Environment (recommended):**
-   '''bash
    python -m venv venv
-   venv\Scripts\activate 
+   venv\Scripts\activate
 
 3. Install dependencies:
 bash
