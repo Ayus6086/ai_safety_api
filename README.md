@@ -54,7 +54,7 @@ POST | /incidents | Create new incident | curl -X POST http://127.0.0.1:5000/inc
 PUT | /incidents/<id> | Update an incident | curl -X PUT http://127.0.0.1:5000/incidents/1 -H "Content-Type: application/json" -d "{\"title\": \"Updated Title\"}"
 DELETE | /incidents/<id> | Delete an incident | curl -X DELETE http://127.0.0.1:5000/incidents/1
 
-***✍️ Design Decisions / Challenges***
+**✍️ Design Decisions / Challenges**
 Simple Design: Flask with SQLite for quick setup, avoiding complex configuration.
 
 Modular Code: Separate models.py for database models.
